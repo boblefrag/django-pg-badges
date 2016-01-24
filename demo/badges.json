@@ -1,0 +1,26 @@
+[
+    {
+        "code": "pionner",
+        "condition": "age(NEW.date_joined) > interval '1 year'",
+        "name": "Pionner",
+        "trigger_condition": "update",
+        "trigger_table": "auth_user",
+        "user_field": "id"
+    },
+    {
+        "code": "collector",
+        "condition": "count(id) >= 4 from dummy_sketch where user_id = NEW.user_id",
+        "name": "Collector",
+        "trigger_condition": "insert",
+        "trigger_table": "dummy_sketch",
+        "user_field": "user_id"
+    },
+    {
+        "code": "star",
+        "condition": "NEW.hit_views >= 1000 ",
+        "name": "Star",
+        "trigger_condition": "update",
+        "trigger_table": "dummy_sketch",
+        "user_field": "user_id"
+    }
+]
