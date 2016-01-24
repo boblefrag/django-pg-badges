@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/boblefrag/django-pg-badges.svg?branch=master)](https://travis-ci.org/boblefrag/django-pg-badges)
+
 Badges are earned by users for meeting some `conditions` defined
 in the badge.json file
 
