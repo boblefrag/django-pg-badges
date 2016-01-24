@@ -63,7 +63,7 @@ class CollectorTest(TriggerMixin, TestCase):
 
         data = {
             "code": "collector",
-            "condition": "count(id) >= 5 from dummy_sketch where user_id = NEW.user_id",
+            "condition": "count(id) >= 5 from dummy_sketch where user_id = NEW.user_id",  # noqa
             "name": "Collector",
             "trigger_condition": "insert",
             "trigger_table": "dummy_sketch",

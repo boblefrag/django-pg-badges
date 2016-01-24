@@ -61,7 +61,7 @@ badge.json example
 ```
 `name` is the name of the badge as it will be displayed in the front or the API.
 
-`code` is th unique code name of the badge
+`code` is the unique code name of the badge
 
 `condition` is the query that will be issued to check if the badge
 should be earned

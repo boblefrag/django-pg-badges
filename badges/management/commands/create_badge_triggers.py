@@ -14,6 +14,7 @@ SELECT proname, relname FROM
 JOIN pg_proc ON (tgfoid=pg_proc.oid) WHERE proname LIKE 'badge_%';
 """
 
+
 class Command(BaseCommand):
     def add_arguments(self, parser):
 
