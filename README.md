@@ -36,7 +36,8 @@ When you change `badge.json` (adding, updating or deleting badges) run this comm
 
 badge.json example
 ------------------
-{"name": "Pionner",
+```
+[{"name": "Pionner",
 "code": "pionner",
 "condition": "age(NEW.date_joined) > interval '1 year'",
 "trigger_condition": "update",
@@ -56,8 +57,8 @@ badge.json example
 "trigger_condition": "update",
 "trigger_table": "dummy_sketch",
 "user_field": "user_id"
-},
-
+}]
+```
 `name` is the name of the badge as it will be displayed in the front or the API.
 
 `code` is th unique code name of the badge
